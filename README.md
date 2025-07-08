@@ -161,6 +161,7 @@ Implemented via [`inlineData`](https://ai.google.dev/api/caching#Part).
   - [ ] `logprobs`
   - [ ] `top_logprobs`
   - [x] `max_tokens`, `max_completion_tokens`
+  - [x] `modalities`
   - [x] `n` (`candidateCount` <8, not for streaming)
   - [x] `presence_penalty`
   - [x] `reasoning_effort`

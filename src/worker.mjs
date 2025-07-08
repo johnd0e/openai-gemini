@@ -269,7 +269,9 @@ const thinkingBudgetMap = {
   high: 24576,
 };
 const transformConfig = (req) => {
-  let cfg = {};
+  let cfg = {
+    responseModalities: req.modalities?.map(str => str.toUpperCase()),
+  };
   //if (typeof req.stop === "string") { req.stop = [req.stop]; } // no need
   for (let key in req) {
     const matchedKey = fieldsMap[key];
